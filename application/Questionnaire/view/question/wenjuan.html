@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>123</title>
+</head>
+<body>
+<!--<form action="/questionnaire/question/add" method="post">-->
+    <!--<h4>填空题</h4>-->
+
+    <!--题目编号：<input type="text" name="form[0][order_id]"><br>-->
+    <!--题目：<input type="text" name="form[0][title]"><br>-->
+    <!--题目描述:<input type="text" name="form[0][con]"><br><br>-->
+    <!--<hr>-->
+    <!--题目编号：<input type="text" name="form[1][order_id]"><br>-->
+    <!--题目：<input type="text" name="form[1][title]"><br>-->
+    <!--题目描述:<input type="text" name="form[1][con]"><br><br>-->
+    <!--<hr>-->
+
+    <!--<input type="submit" value="提交">-->
+<!--</form>-->
+
+
+<form action="/questionnaire/question/add" method="post"  enctype='application/json'>
+    <!--问卷名称：<input type="text" name="wenjuan[name]"></input><br>-->
+    <!--问卷描述：<input type="text" name="wenjuan[con]"></input><br>-->
+    <!--出题人：    <input type="text" name="wenjuan[uid]"></input><br>-->
+    <hr>
+    矩阵填空<br>
+    题目类型:<input type="text" name="form[0][type]"><br>
+    <!--题目编号:<input type="text" name="form[0][order_id]"><br>-->
+    题目标题:<input type="text" name="form[0][title][]"><br>
+    题目描述:<input type="text" name="form[0][con]"><br>
+    矩阵内容:
+    <input type="text" name="form[0][title][]">-<input type="text"><br>
+    <input type="text" name="form[0][title][]">-<input type="text"><br>
+
+    <hr>
+    矩阵单选<br>
+    题目类型<input type="text" name="form[1][type]"><br>
+    题目标题:<input type="text" name="form[1][title][]"><br>
+    题目描述:<input type="text" name="form[1][con]"><br>
+    矩阵内容:<input type="text" name="form[1][title][]"><br>
+             <input type="text" name="form[1][title][]"><br>
+    选项值:<input type="text" name='form[1][value][]' ><br>
+    选项值:<input type="text" name='form[1][value][]' ><br>
+
+    <hr>
+    矩阵多选<br>
+    题目类型<input type="text" name="form[2][type]"><br>
+    题目标题:<input type="text" name="form[2][title][]"><br>
+    题目描述:<input type="text" name="form[2][con]"><br>
+    矩阵内容:<input type="text" name="form[2][title][]"><br>
+            <input type="text" name="form[2][title][]"><br>
+    选项值:<input type="text" name='form[2][value][]' ><br>
+    选项值:<input type="text" name='form[2][value][]' ><br>
+    选项值:<input type="text" name='form[2][value][]' ><br>
+    <hr>
+    单选<br>
+    题目类型<input type="text" name="form[3][type]"><br>
+    题目标题:<input type="text" name="form[3][title]"><br>
+    题目描述:<input type="text" name="form[3][con]"><br>
+    选项值:<input type="text" name='form[3][value][]' ><br>
+    选项值:<input type="text" name='form[3][value][]' ><br>
+    <hr>
+    多选<br>
+    题目类型<input type="text" name="form[4][type]"><br>
+    题目标题:<input type="text" name="form[4][title]"><br>
+    题目描述:<input type="text" name="form[4][con]"><br>
+    选项值:<input type="text" name='form[4][value][]' ><br>
+    选项值:<input type="text" name='form[4][value][]' ><br>
+    选项值:<input type="text" name='form[4][value][]' ><br>
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>

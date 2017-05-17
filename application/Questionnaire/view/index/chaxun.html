@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div>
+		<form action="/questionnaire/index/insert" method="post">
+		问卷名称:{$data['name']} <br><br>
+		问卷描述:{$data['con']}  <br><br>
+		问卷内容: <br><br>
+		<hr>
+		
+		{$que_str}
+		<input type="submit" value="提交">
+	</form>
+	</div>
+	
+</body>
+</html>

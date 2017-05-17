@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ 	<div>
+		<form action="/questionnaire/index/add" method="post">
+		    问卷名称：<input type="text" name="wenjuan[name]"></input><br><br>
+		    问卷描述：<input type="text" name="wenjuan[con]"></input><br><br>
+			出题人：<input type="text" name="wenjuan[uid]"></input><br><br>
+			
+			<hr>
+			<!-- 文本题 -->
+			问题类型：<select name="form[1][type]" id="">
+				        <option value="1">文本</option>
+				        <option value="2">单选</option>
+				        <option value="3">多选</option>
+			        </select><br><br>
+			
+
+			题目编号：<input type="text" name="form[1][num]"><br><br>
+			题目：<input type="text" name="form[1][title]"><br><br>
+			题目描述：<input type="text" name="form[1][con]"><br><br>
+			
+			<hr>
+			<!-- 单选题 -->
+			问题类型：<select name="form[2][type]" id="">
+				        <option value="1">文本</option>
+				        <option value="2">单选</option>
+				        <option value="3">多选</option>
+			        </select><br><br>
+			题目编号：<input type="text" name="form[2][num]"><br><br>
+			题目：<input type="text" name="form[2][title]"><br><br>
+			题目描述：<input type="text" name="form[2][con]"><br><br>
+			选项名:<input type="text" name='form[2][option][option][1]' >
+			选项值:<input type="text" name='form[2][option][value][1]' ><br><br>
+			选项名:<input type="text" name='form[2][option][option][2]' >
+			选项值:<input type="text" name='form[2][option][value][2]' ><br><br>
+
+			<hr>
+			问题类型：<select name="form[4][type]" id="">
+			<option value="1">文本</option>
+			<option value="2">单选</option>
+			<option value="3">多选</option>
+				</select><br><br>
+			题目编号：<input type="text" name="form[4][num]"><br><br>
+			题目：<input type="text" name="form[4][title]"><br><br>
+			题目描述：<input type="text" name="form[4][con]"><br><br>
+			选项名:<input type="text" name='form[4][option][option][1]' >
+			选项值:<input type="text" name='form[4][option][value][1]' ><br><br>
+			选项名:<input type="text" name='form[4][option][option][2]' >
+			选项值:<input type="text" name='form[4][option][value][2]' ><br><br>
+				
+			<hr >
+			<!-- 多选题 -->
+			问题类型：<select name="form[3][type]" id="">
+				        <option value="1">文本</option>
+				        <option value="2">单选</option>
+				        <option value="3">多选</option>
+			        </select><br><br>
+			题目编号：<input type="text" name="form[3][num]"><br><br>
+			题目：<input type="text" name="form[3][title]"><br><br>
+			题目描述：<input type="text" name="form[3][con]"><br><br>
+			选项名:<input type="text" name='form[3][option][option][1]' >
+			选项值:<input type="text" name='form[3][option][value][1]' ><br><br>
+			选项名:<input type="text" name='form[3][option][option][2]' >
+			选项值:<input type="text" name='form[3][option][value][2]' ><br><br>
+			选项名:<input type="text" name='form[3][option][option][3]' >
+			选项值:<input type="text" name='form[3][option][value][3]' ><br><br>
+
+
+			<input type="submit" value	="提交">
+		</form>
+ 	</div>
+ 	
+</body>
+</html>
